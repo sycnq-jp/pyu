@@ -1,0 +1,55 @@
+:root {
+  --bg-color: #111;
+  --text-color: #fff;
+  --accent-color: #888;
+}
+
+body.light {
+  --bg-color: #fff;
+  --text-color: #111;
+  --accent-color: #555;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  background-color: var(--bg-color);
+  color: var(--text-color);
+  font-family: 'Segoe UI', sans-serif;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  transition: all 0.3s ease;
+}
+
+header {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 40px;
+}
+
+.toggle-wrap button {
+  background: none;
+  border: 1px solid var(--accent-color);
+  color: var(--text-color);
+  margin-left: 10px;
+  padding: 5px 10px;
+  cursor: pointer;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+}
+
+.toggle-wrap svg {
+  stroke: var(--text-color);
+}
