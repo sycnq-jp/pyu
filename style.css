@@ -53,3 +53,21 @@ header {
 .toggle-wrap svg {
   stroke: var(--text-color);
 }
+
+footer {
+  position: absolute;
+  bottom: 20px;
+  width: 100%;
+  text-align: center;
+  color: var(--accent-color);
+  font-size: 0.9rem;
+  line-height: 1.6;
+}
+
+footer .hint {
+  margin: 0;
+}
+
+footer .copyright {
+  margin-top: 5px;
+}
