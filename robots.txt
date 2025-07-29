@@ -2,4 +2,5 @@ User-agent: *
 Disallow: /plans.html
 Disallow: /terms.html
 Disallow: /privacy.html
+Disallow: /credit.html
 Allow: /index.html
