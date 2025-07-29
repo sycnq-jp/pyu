@@ -162,29 +162,37 @@
     </div>
   </footer>
 
-  <!-- Typing Animation -->
-  <script>
-    const typingText = document.getElementById("typing-text");
-    const text = "初心者にも安心のサポート体制";
-    let index = 0;
-    let typingInterval;
+<!-- Typing Animation -->
+<script>
+  const typingText = document.getElementById("typing-text");
+  const texts = [
+    "困ったらすぐ聞ける、丁寧サポート",
+    "国内拠点×日本語対応のサポート体制",
+    "トラブル知らずの安定稼働を実現",
+    "初心者〜中級者に最適な設計と対応力"
+  ];
+  let textIndex = 0;
+  let charIndex = 0;
+  let typingInterval;
 
-    function type() {
-      if (index <= text.length) {
-        typingText.textContent = text.substring(0, index);
-        index++;
-      } else {
-        clearInterval(typingInterval);
-        setTimeout(() => {
-          index = 0;
-          typingInterval = setInterval(type, 120);
-        }, 4000);
-      }
+  function type() {
+    const currentText = texts[textIndex];
+    if (charIndex <= currentText.length) {
+      typingText.textContent = currentText.substring(0, charIndex);
+      charIndex++;
+    } else {
+      clearInterval(typingInterval);
+      setTimeout(() => {
+        charIndex = 0;
+        textIndex = (textIndex + 1) % texts.length;
+        typingInterval = setInterval(type, 120);
+      }, 3000);
     }
+  }
 
-    window.onload = () => {
-      typingInterval = setInterval(type, 120);
-    };
-  </script>
+  window.onload = () => {
+    typingInterval = setInterval(type, 120);
+  };
+</script>
 </body>
 </html>
