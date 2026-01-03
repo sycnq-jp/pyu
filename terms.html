@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<title>CATS SHOP - 利用規約</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@700;800&display=swap" rel="stylesheet">
+
+<style>
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+}
+
+body {
+  background: black;
+  color: white;
+  overflow-x: hidden;
+}
+
+/* ===== TOP BAR ===== */
+.top-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 60px;
+  background: rgba(0,0,0,0.6);
+  backdrop-filter: blur(12px);
+  border-bottom: 1px solid rgba(255,255,255,0.08);
+  z-index: 1000;
+}
+
+.top-inner {
+  max-width: 1100px;
+  height: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-left {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.top-left img {
+  width: 32px;
+  height: 32px;
+  border-radius: 8px;
+}
+
+.logo {
+  font-size: 14px;
+  font-weight: 800;
+  letter-spacing: 2px;
+}
+
+.nav a {
+  margin-left: 22px;
+  font-size: 12px;
+  font-weight: 800;
+  color: rgba(255,255,255,0.85);
+  text-decoration: none;
+}
+
+.nav a:hover {
+  opacity: 0.6;
+}
+
+/* ===== BACKGROUND ===== */
+#bg {
+  position: fixed;
+  inset: 0;
+  background-image: url("imageee.png");
+  background-size: cover;
+  background-position: center;
+  filter: blur(12px);
+  z-index: 0;
+}
+
+/* ===== CONTENT ===== */
+.main {
+  position: relative;
+  z-index: 1;
+  padding-top: 140px;
+}
+
+.section {
+  background: white;
+  color: black;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 40px 30px 60px;
+  border-radius: 16px;
+}
+
+.section-title {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 800;
+  margin-bottom: 30px;
+}
+
+.terms {
+  font-size: 13px;
+  line-height: 1.8;
+}
+
+.terms p {
+  margin-bottom: 14px;
+}
+
+/* footer */
+footer {
+  position: relative;
+  z-index: 2;
+  margin-top: 80px;
+  text-align: center;
+  font-size: 11px;
+  color: rgba(255,255,255,0.7);
+  padding-bottom: 20px;
+}
+</style>
+</head>
+
+<body>
+
+<div class="top-bar">
+  <div class="top-inner">
+    <div class="top-left">
+      <img src="logo.png">
+      <div class="logo">CATS SHOP</div>
+    </div>
+    <nav class="nav">
+      <a href="index.html">メイン</a>
+      <a href="terms.html">利用規約</a>
+      <a href="staff.html">運営者</a>
+      <a href="https://discord.gg/9WrjmX5Rw9">サーバーに参加</a>
+    </nav>
+  </div>
+</div>
+
+<div id="bg"></div>
+
+<div class="main">
+  <div class="section">
+    <div class="section-title">利用規約</div>
+
+    <div class="terms">
+      <p>① メンバーへの無断DMでの売買は禁止です。取引は必ずチケット内で行ってください。</p>
+      <p>② 商品受け渡し後は、できるだけ早めに実績記入をお願いします。（目安：2時間以内）</p>
+      <p>③ キャンセルは原則不可です。やむを得ない場合はスタッフへ相談してください。</p>
+      <p>④ メンバーになりすます行為は禁止です。</p>
+      <p>⑤ 購入は先払い制です。</p>
+      <p>⑥ Discordの利用規約を遵守してください。</p>
+      <p>⑦ 他のメンバー・スタッフに対する暴言や迷惑行為は禁止です。</p>
+      <p>⑧ 購入した商品の転売を希望する場合は、事前にスタッフへ確認してください。</p>
+      <p>⑨ 評価（レビュー）は正直に記入してください。不当な評価と判断した場合、確認を行います。</p>
+      <p>⑩ お客様都合による返金はできません。</p>
+      <p>⑪ 実績記入が遅れる場合は、事前に連絡してください。無断での長時間放置は禁止です。</p>
+      <p>⑫ サーバーが荒らされた・削除された等の場合でも返金対応はできません。</p>
+      <p>⑬ 詐欺・荒らし・悪質行為が確認された場合はBANします。</p>
+      <p>⑭ DM間での個人取引で発生したトラブルについて、当サーバーは責任を負いません。</p>
+      <p>⑮ スタッフの案内・指示には必ず従ってください。</p>
+      <p>⑯ 取引中の過度な催促（「早く」「まだ？」等）は禁止です。続く場合はチケットを閉じる場合があります。</p>
+    </div>
+
+  </div>
+</div>
+
+<footer>
+  © 2025 CATS SHOP · All Rights Reserved
+</footer>
+
+</body>
+</html>
